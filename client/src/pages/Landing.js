@@ -1,12 +1,12 @@
-import React from "react";
-import logo from "../assets/images/logo.svg";
-import main from "../assets/images/main.svg";
+import main from "../assets/images/main-alternative.svg";
+import Wrapper from "../assets/wrappers/LandingPage";
+import { Logo } from "../components";
 
 const Landing = () => {
   return (
-    <main>
+    <Wrapper>
       <nav>
-        <img src={logo} alt="jobify.io" />
+        <Logo />
       </nav>
       <div className="container page">
         {/* info */}
@@ -14,14 +14,14 @@ const Landing = () => {
           <h1>
             job <span>tracking</span> app
           </h1>
-          <p></p>
+          <p>Start tracing jobs before you loose track of them</p>
           <button to="/register" className="btn btn-hero">
             Login/Register
           </button>
         </div>
         <img src={main} alt="job hunt" className="img main-img" />
       </div>
-    </main>
+    </Wrapper>
   );
 };
 
